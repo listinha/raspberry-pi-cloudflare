@@ -1,0 +1,11 @@
+[Unit]
+Description=Updates DNS in Cloudflare
+After=network.target
+
+[Service]
+User=pi
+ExecStart=/home/pi/cf-ip-updater/run.sh
+WorkingDirectory=/home/pi/cf-ip-updater
+
+[Install]
+WantedBy=multi-user.target

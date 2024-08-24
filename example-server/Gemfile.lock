@@ -1,0 +1,18 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mustermann (3.0.2)
+      ruby2_keywords (~> 0.0.1)
+    ruby2_keywords (0.0.5)
+    spyder (0.1.1)
+      mustermann (~> 3.0)
+
+PLATFORMS
+  arm64-darwin-23
+  ruby
+
+DEPENDENCIES
+  spyder
+
+BUNDLED WITH
+   2.5.14

@@ -1,0 +1,12 @@
+[Unit]
+Description=Updates DNS in Cloudflare every 5 minutes
+Requires=cf-ip-updater.service
+
+[Timer]
+Unit=cf-ip-updater.service
+OnBootSec=5m
+OnUnitInactiveSec=5m
+AccuracySec=1m
+
+[Install]
+WantedBy=timers.target

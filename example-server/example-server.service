@@ -1,0 +1,11 @@
+[Unit]
+Description=My example server
+After=network.target
+
+[Service]
+User=pi
+ExecStart=/home/pi/example-server/run.sh
+WorkingDirectory=/home/pi/example-server
+
+[Install]
+WantedBy=multi-user.target
